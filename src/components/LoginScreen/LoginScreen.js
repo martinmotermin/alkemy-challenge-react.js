@@ -34,7 +34,7 @@ export const LoginScreen = () => {
     });
 
     axios
-      .post("https://challenge-react.alkemy.org/", {
+      .post("http://challenge-react.alkemy.org/", {
         email: loginData.email,
         password: loginData.password,
       })
