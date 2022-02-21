@@ -1,3 +1,19 @@
+<h2> Alkemy Challenge - React.js </h2>
+<img src="https://thumbs.gfycat.com/BestMeagerHoki-size_restricted.gif">
+
+```javascript
+const me = {
+  name: 'Martin Otermin',
+  code: [HTML, CSS, Javascript],
+  tools: [React, React-router-dom, Formik, Bootstrap, SweetAlert, Axios, React-Icons],
+  challenge: "Challenge realizado para el ingreso al campus de Alkemy"
+}
+```
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
