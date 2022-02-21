@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap");
+
+:root {
+  --font-base: "Poppins", sans-serif;
+  --font-alt: "Roboto", sans-serif;
+
+  --color-black: #0c0c0c;
+  --color-darkgray: #30383b;
+  --color-gray: #65656b;
+  --color-green: #a6d803;
+  --color-white: #ffffff;
+  --color-red: #b74f39;
+  --color-light: rgba(132, 139, 200, 0.18);
+  --color-info-dark: #7d8da1;
+  --color-yellow: #ebd032;
+
+  --card-border-radius: 2rem;
+  --border-radius-1: 0.4rem;
+  --border-radius-2: 0.8rem;
+  --border-radius-3: 1.2rem;
+
+  --card-padding: 1.8rem;
+  --padding-1: 1.2rem;
+
+  --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: url("https://i.ibb.co/5nwdTRW/bg.jpg") fixed center;
+  background-size: cover;
+  user-select: none;
+  margin: 0;
+}
+
+a {
+  color: var(--color-black);
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+small {
+  font-size: 0.75rem;
+}
+
+.text-muted {
+  color: var(--color-info-dark);
+}
+
+.main__content {
+  margin-top: 100px;
+}
+
+button:focus {
+  border: none;
+  outline: none;
+}
+
+.btn {
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 2px 6px 4px rgba(0, 0, 0, 0.25);
+  font-weight: bold;
+  opacity: 1;
+}
+
+.btn svg {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.menuCard_btn--detail {
+  background-color: #00cff2 !important;
+}
+
+.menuCard_btn--delete {
+  color: #ffffff !important;
+  background-color: var(--color-red) !important;
+}
+
+.menuCard_btn--add {
+  background-color: var(--color-green) !important;
+}
+
+.searchButton {
+  background: var(--color-green) !important ;
+  border-radius: 20 !important;
+  padding: 10px 60px !important;
+}
+
+.loginBtn {
+  background: var(--color-green);
+  border-radius: 0;
+  margin-top: 20px;
+  padding: 10px 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .searchButton {
+    height: 50px;
+  }
+}

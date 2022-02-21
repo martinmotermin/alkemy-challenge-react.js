@@ -1,0 +1,12 @@
+.myMenu__content h1 {
+  margin-bottom: 38px;
+}
+
+.emptyMenu h3 a {
+  color: white;
+  text-decoration: underline;
+}
+
+.emptyMenu h3 a:hover {
+  color: var(--color-red);
+}

@@ -1,0 +1,64 @@
+h1 {
+  padding: 10px 20px;
+  position: relative;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-left: solid 60px var(--color-green);
+  font-size: 1.3rem !important;
+  margin-bottom: 30px;
+}
+
+h1 svg {
+  position: absolute;
+  left: -40px;
+  top: 15px;
+}
+
+.acumulatives__content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 30px auto;
+}
+
+.acumulatives__content .acumulativeCard {
+  background-color: rgba(48, 56, 59, 0.87);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px auto;
+  width: 320px;
+  height: 150px;
+  padding: 20px 30px;
+  transition: all 0.5s ease;
+  box-shadow: 2px 6px 4px rgba(0, 0, 0, 0.25);
+}
+
+.acumulativeCard:hover {
+  background-color: rgba(27, 31, 32, 0.87);
+}
+
+.acumulativeCard .acumulativeCard-value {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+}
+
+.acumulativeCard-value h5 {
+  max-width: 100px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.acumulativeCard svg {
+  font-size: 2.5rem;
+  color: #00cff2;
+}

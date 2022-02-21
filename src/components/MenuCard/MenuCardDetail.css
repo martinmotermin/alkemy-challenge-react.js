@@ -1,0 +1,50 @@
+.menuCard__detail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  min-width: 100px;
+  padding: 8px 15px;
+  background: var(--color-darkgray);
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 20px;
+  margin: 5px 10px;
+}
+
+.menuCard__detail svg {
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+.menuCard__detail .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card-body h2 {
+  text-align: center;
+}
+
+.verified {
+  color: var(--color-green);
+}
+
+.lowScore {
+  color: var(--color-yellow);
+}
+
+.highScore {
+  color: var(--color-green);
+}
+
+.peopleIcon {
+  color: var(--color-green);
+}
+
+.notVerified {
+  color: var(--color-red);
+}

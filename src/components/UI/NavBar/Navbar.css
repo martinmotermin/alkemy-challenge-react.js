@@ -1,0 +1,135 @@
+nav {
+  position: fixed;
+  height: 60px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: var(--color-darkgray);
+  width: 100vw;
+  top: 0;
+  z-index: 10;
+}
+nav svg {
+  margin-left: 2rem;
+  background: none;
+  color: white;
+  cursor: pointer;
+  font-size: 2rem;
+}
+aside {
+  height: 100vh;
+  min-width: 270px;
+  background: var(--color-darkgray);
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: 850ms;
+  z-index: 10;
+}
+
+aside.active {
+  left: 0;
+  transition: 350ms;
+}
+
+aside .logo {
+  display: flex;
+}
+
+aside .top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 1.4rem;
+}
+
+.top svg {
+  color: white;
+  cursor: pointer;
+  font-size: 2rem;
+  margin-right: 30px;
+}
+
+/*     Sidebar     */
+
+aside .sidebar {
+  background: var(--color-darkgray);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 86vh;
+  position: relative;
+  top: 3rem;
+}
+
+.sidebar .sidebar__links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 200px;
+  margin-bottom: 10rem;
+}
+
+aside h3 {
+  font-weight: 500;
+}
+
+aside .sidebar a {
+  display: flex;
+  color: var(--color-info-dark);
+  margin-left: 2rem;
+  gap: 1rem;
+  align-items: center;
+  position: relative;
+  height: 3.7rem;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+aside .sidebar a svg {
+  font-size: 1.6rem;
+  transition: all 0.3s ease;
+}
+
+.sidebar .sidebar-lastSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  bottom: 2rem;
+}
+
+.sidebar a.active {
+  background: var(--color-light);
+  color: var(--color-red);
+  margin-left: 0;
+}
+
+.sidebar a.active:before {
+  content: "";
+  width: 6px;
+  height: 100%;
+  background: var(--color-red);
+}
+
+.sidebar a.active svg {
+  color: var(--color-red);
+  margin-left: calc(1rem - 3px);
+}
+
+.sidebar a:hover {
+  color: white;
+}
+
+.sidebar a:hover svg {
+  margin-left: 1rem;
+}
+
+.sidebar a .menu-count {
+  background: var(--color-red);
+  color: white !important;
+  padding: 2px 10px;
+  font-size: 11px;
+  border-radius: var(--border-radius-1);
+}
