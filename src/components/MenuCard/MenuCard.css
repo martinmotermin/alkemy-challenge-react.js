@@ -73,4 +73,8 @@
   .menu__card .card__body {
     width: 50%;
   }
+
+  .menu__card h2 {
+    font-size: 1.4rem;
+  }
 }
