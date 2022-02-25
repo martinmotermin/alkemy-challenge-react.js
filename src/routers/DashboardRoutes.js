@@ -13,10 +13,9 @@ export const DashboardRoutes = () => {
         <Navbar />
         <div className="main__content">
           <Routes>
-            <Route path="/" element={<MyMenuScreen />} />
-            <Route path="/search" element={<SearchScreen />} />
-            <Route path="/search/:menuId" element={<MenuCardInfo />} />
             <Route path="" element={<MyMenuScreen />} />
+            <Route path="search" element={<SearchScreen />} />
+            <Route path="search/:menuId" element={<MenuCardInfo />} />
           </Routes>
         </div>
       </MenuContextProvider>

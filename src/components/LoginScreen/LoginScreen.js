@@ -34,7 +34,7 @@ export const LoginScreen = () => {
     });
 
     axios
-      .post("http://challenge-react.alkemy.org/", {
+      .post("https://node-api-proxy-alkemy.herokuapp.com/", {
         email: loginData.email,
         password: loginData.password,
       })
