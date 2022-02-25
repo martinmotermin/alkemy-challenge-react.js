@@ -20,6 +20,13 @@ export const SearchScreen = () => {
   const handleSubmit = (search) => {
     getMenusByName(search)
       .then((res) => {
+        if (res.length < 1) {
+          MenuModal.fire({
+            icon: "error",
+            title: `No se encontraron resultados para tu busqueda con: ${search}`,
+          });
+          navigate(`/search`);
+        }
         sessionStorage.setItem("lastSearch", JSON.stringify(res));
         setResults(res);
         //Definimos la busqueda en los params
